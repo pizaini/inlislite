@@ -1,0 +1,146 @@
+<?php
+
+namespace common\models\base;
+
+use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\behaviors\BlameableBehavior;
+use inlislite\gii\behaviors\TerminalBehavior;
+
+/**
+ * This is the base-model class for table "survey".
+ *
+ * @property integer $ID
+ * @property string $NamaSurvey
+ * @property string $TanggalMulai
+ * @property string $TanggalSelesai
+ * @property boolean $IsActive
+ * @property integer $NomorUrut
+ * @property integer $TargetSurvey
+ * @property integer $HasilSurveyShow
+ * @property string $RedaksiAwal
+ * @property string $RedaksiAkhir
+ * @property string $Keterangan
+ * @property integer $CreateBy
+ * @property string $CreateDate
+ * @property string $CreateTerminal
+ * @property integer $UpdateBy
+ * @property string $UpdateDate
+ * @property string $UpdateTerminal
+ *
+ * @property \common\models\Users $createBy
+ * @property \common\models\Users $updateBy
+ * @property \common\models\SurveyPertanyaan[] $surveyPertanyaans
+ */
+class Survey extends \yii\db\ActiveRecord
+{
+
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'survey';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['NamaSurvey', 'TanggalMulai', 'TanggalSelesai'], 'required'],
+            [['TanggalMulai', 'TanggalSelesai', 'CreateDate', 'UpdateDate'], 'safe'],
+            [['IsActive'], 'boolean'],
+            [['NomorUrut', 'TargetSurvey', 'HasilSurveyShow', 'CreateBy', 'UpdateBy'], 'integer'],
+            [['RedaksiAwal', 'RedaksiAkhir'], 'string'],
+            [['NamaSurvey'], 'string', 'max' => 200],
+            [['Keterangan'], 'string', 'max' => 255],
+            [['CreateTerminal', 'UpdateTerminal'], 'string', 'max' => 100],
+            [['CreateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['CreateBy' => 'ID']],
+            [['UpdateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['UpdateBy' => 'ID']]
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'ID' => Yii::t('app', 'ID'),
+            'NamaSurvey' => Yii::t('app', 'Nama Survey'),
+            'TanggalMulai' => Yii::t('app', 'Tanggal Mulai'),
+            'TanggalSelesai' => Yii::t('app', 'Tanggal Selesai'),
+            'IsActive' => Yii::t('app', 'Is Active'),
+            'NomorUrut' => Yii::t('app', 'Nomor Urut'),
+            'TargetSurvey' => Yii::t('app', 'Target Survey'),
+            'HasilSurveyShow' => Yii::t('app', 'Hasil Survey Show'),
+            'RedaksiAwal' => Yii::t('app', 'Redaksi Awal'),
+            'RedaksiAkhir' => Yii::t('app', 'Redaksi Akhir'),
+            'Keterangan' => Yii::t('app', 'Keterangan'),
+            'CreateBy' => Yii::t('app', 'Create By'),
+            'CreateDate' => Yii::t('app', 'Create Date'),
+            'CreateTerminal' => Yii::t('app', 'Create Terminal'),
+            'UpdateBy' => Yii::t('app', 'Update By'),
+            'UpdateDate' => Yii::t('app', 'Update Date'),
+            'UpdateTerminal' => Yii::t('app', 'Update Terminal'),
+        ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCreateBy()
+    {
+        return $this->hasOne(\common\models\Users::className(), ['ID' => 'CreateBy']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUpdateBy()
+    {
+        return $this->hasOne(\common\models\Users::className(), ['ID' => 'UpdateBy']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSurveyPertanyaans()
+    {
+        return $this->hasMany(\common\models\SurveyPertanyaan::className(), ['Survey_id' => 'ID']);
+    }
+
+
+/**
+     * @inheritdoc
+     * @return type array
+     */ 
+    public function behaviors()
+    {
+        return [
+        \common\widgets\nhkey\ActiveRecordHistoryBehavior::className(),
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'CreateDate',
+                'updatedAtAttribute' => 'UpdateDate',
+                'value' => new \yii\db\Expression('NOW()'),
+            ],
+            [
+                'class' => BlameableBehavior::className(),
+                'createdByAttribute' => 'CreateBy',
+                'updatedByAttribute' => 'UpdateBy',
+            ],
+            [
+                'class' => TerminalBehavior::className(),
+                'createdTerminalAttribute' => 'CreateTerminal',
+                'updatedTerminalAttribute' => 'UpdateTerminal',
+                'value' => \Yii::$app->request->userIP,
+            ],
+        ];
+    }
+
+
+    
+}

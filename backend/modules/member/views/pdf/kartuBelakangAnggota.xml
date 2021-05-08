@@ -1,0 +1,22 @@
+<pdf>
+    <dynamic-page margin="0" width="1004px" height="618px" font-type="DejaVuSans">
+        <?php
+			$model = \common\models\Settingparameters::findOne(14);
+	        $separator = DIRECTORY_SEPARATOR;
+	        
+	        $backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}bg_cardmemberbelakang.png";
+
+        ?>       
+        <div height="618px" width="1020px" background.color="#ffe061" background.image="<?php echo $backImage; ?>">
+		        <div float="left" margin-top="70px" margin-left="55px" font-size="30px" width="900px" >
+
+		        <?php 
+		        $test = str_replace('&nbsp;',' ',str_replace('</u>','</span>',str_replace('<u>','<span style="text-decoration:underline;">',str_replace('<br>', '<br/>',$model->Value))));
+		        	echo $test;
+		        ?>				
+				</div>
+        </div>
+     </dynamic-page>
+</pdf>
+
+

@@ -1,0 +1,445 @@
+
+#mainformcontent input, select, textarea, td, button
+{
+	font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	font-size:9pt;
+}
+
+
+#header
+{
+	background: url('images/bg_header.png') repeat-x;
+	display: block;
+	max-width: 100%;
+	min-width: 960px;
+	height: 84px;
+}
+#logo{
+	position:absolute;
+	top:16px;
+	left:26px;	
+	float:left;
+}
+#userlog{
+	position:absolute;
+	display:block;
+	float:right;
+	width:190px;
+	height:32px;
+	background:transparent;
+	top:25px;
+	right:35px;
+	z-index:2;	
+}
+#userlog .signout{ color:white;text-decoration:none;} #userlog .signout:hover{ color:#e2e9f1;text-decoration:none;}
+#t_userlog{
+	color:white;
+	font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	font-size:9pt;
+	font-weight:bold;
+}
+.td_userlog{
+	background:url(images/bg_userlog.png) no-repeat center;	
+	height:32px;
+	text-align:center;
+}
+
+
+input[type=text],[type=password] { padding:0.5em; border:1px solid #9ca4b2;font-size:8pt !important;}
+select, textarea { padding:0.5em; border:1px solid #9ca4b2;font-size:8pt !important;}
+#leftmenu{ width:220px; }
+
+#tabledaftar td
+{
+    padding:0.5em 0.5em 0.5em 1em;
+    font-size:8pt !important;
+}
+
+#menuut{
+	width:100%;
+	display:block;
+	overflow:auto;
+}
+#ulsubmenu{
+	list-style:none;	
+	margin:-2px 0px 0px 0px;
+	padding:0px;
+}
+#ulsubmenu li{
+	background:url(images/bg_submenu1.png) repeat-x;
+	height:25px; font-size:12px;
+	padding:5px 0px 0px 9px;
+}
+.list{
+	background:url(images/bg_submenu1.png) repeat-x;
+	height:25px; font-size:9pt;
+	padding:5px 0px 0px 9px;
+	letter-spacing:0px;
+	cursor:default;
+}
+.mainmenu{
+	color:#2e2c2d;	
+	background:url(images/bg_menu.png) repeat-x;
+	height:25px; font-size:12px; font-weight:bold;
+	padding:7px 0px 0px 7px;
+	display:block;
+}
+
+#mainformcontent
+{
+	padding: 5pt;
+	background: white;
+	display: block;
+	overflow:auto;max-height:500px;
+}
+
+.titlecontent
+{
+	color: #336699;
+	/*background: url(images/bg_menu.png) repeat-x;*/
+	/*background:#0054ff;*/
+	background: url(images/bg_menu.png) bottom repeat-x #edf3fa;
+	height: 35px;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 10px 0px 0px 10px;
+	display: block;
+	position:relative;
+	top:-20px;
+}
+
+.menu_list {	
+	width: 220px;
+}
+.menu_head {
+	padding: 4px 15px 4px 36px;
+	cursor: default;
+	position: relative;
+	margin:1px;
+	background: #e9eef5 url(images/left.png)no-repeat;
+	background-position:20px 10px;
+	font-size:11px;
+	color:#5b5e61;
+}
+.linksub {
+	padding: 4px 15px 4px 36px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	background: #e9eef5;
+	background-position:20px 10px;
+	font-size:11px; 
+}
+
+.linksub2 {
+	padding: 4px 15px 4px 36px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	background: #c6cfdd;
+	background-position:20px 10px;
+	font-size:11px; 
+}
+
+.linksub a{text-decoration:none;color:#5b5e61;}
+
+.menu_body {display:none;}
+.menu_body a{
+  display:block;
+  color:#376faf;
+  background:#e9f0f7;
+  padding:4px 5px 4px 40px;
+  text-decoration:none;
+	font-size:11px;
+	border-bottom:1px solid #e5eaf1;
+}
+.menu_body a:hover{
+  color: #000000;
+  text-decoration:underline;
+  }
+
+.PageTitle
+{
+	padding: 1em;
+	font-size: 1.2em;
+	color: #6699FF;
+	font-weight: bold;
+}
+.ButtonArea { background-color: #EFEFEF; padding: .5em 1em .5em 1em; }
+.FormArea { padding: 1em; }
+.catalogdescription { font-size: .9em; color: #999999; }
+#maincontent a, #maincontent a:link { color: #0099FF; text-decoration: underline; }
+#maincontent {font-size:9pt;}
+#maincontent a:hover { color: #FF3300; text-decoration: none; }
+#maincontent input { margin:.3em; }
+.hovermenuleft { background:black !important; }
+
+.linksub a{text-decoration: none !important;} .linksub a:hover{text-decoration: none !important;}
+.linksub2 a{text-decoration: none !important;} .linksub2 a:hover{text-decoration: none !important; color:Black;}
+
+.listofformitem
+{
+	border: 1px solid #99CCFF;
+	padding: 0.3em;
+	background-color: #f5f5f5;
+	margin:0.2em;
+	width: 90%;
+	display:block;
+}
+.removelistofitem, .removelistofitem a, .removelistofitem a:link
+{
+	float:right;
+	top:100px;
+	text-decoration:none;
+}
+
+table.display thead th {
+    cursor: pointer;
+    font-size: 9pt;
+}
+#divUserOnline a, #divUserOnline a:link
+{
+	color: #99CCFF;
+	text-decoration: underline;
+}
+#divUserOnline a:hover
+{
+	color: #FFCC00;
+	text-decoration: none;
+}
+.linksub a, .linksub a:link
+{
+	text-decoration: underline;
+}
+.linksub a:hover
+{
+	text-decoration: none;
+}
+.mandatory
+{
+	color: #FF6600;
+	font-weight: bold;
+}
+
+/* add */
+
+#newspaper-b
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 10px;
+	width: 90%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #69c;
+}
+#newspaper-b th
+{
+	padding: 15px 10px 10px 10px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #039;
+}
+#newspaper-b tbody
+{
+	background: #e8edff;
+}
+#newspaper-b td
+{
+	padding: 10px;
+	color: #669;
+	border-top: 1px dashed #fff;
+}
+#newspaper-b tbody tr:hover td
+{
+	color: #339;
+	background: #d0dafd;
+}
+    .style1
+    {
+        width: 162px;
+    }
+    .style2
+    {
+        width: 1px;
+    }
+    .style3
+    {
+        width: 176px;
+    }
+    .style4
+    {
+        width: 20px;
+    }
+    
+.note
+{
+    font-size:11px;
+    font-style:italic;   
+}
+.lockTextBox
+{
+    background-color:#d9d9d9;   
+}
+/* end */
+
+
+/* Css For Password Meter */
+/*  ADVANCED STYLES */
+.top_testresult{
+	font-weight: bold;
+	font-size:13px;
+	font-family: arail,helvetica,san-serif;
+	color:#666;
+	padding:0;
+	margin:0 0 2px 0;
+}
+.top_testresult span{
+	padding:6px ;
+	margin:0;
+}
+.top_shortPass{
+	background:#edabab;
+	border:1px solid #bc0000;
+	display:block;
+}
+.top_shortPass span{
+	
+}
+.top_badPass{
+	background:#edabab;
+	border:1px solid #bc0000;
+	display:block;
+}
+.top_badPass span{
+	
+}
+.top_goodPass{
+	background:#ede3ab;
+	border:1px solid #bc9f00;
+	display:block;
+}
+.top_goodPass span{
+
+}
+.top_strongPass{
+	background:#d3edab;
+	border:1px solid #73bc00;
+	display:block;
+}
+.top_strongPass span{
+
+}
+
+
+/* 	RESULT STYLE  */
+.testresult{
+	font-weight: bold;
+	font-size:13px;
+	font-family: arial,helvetica,san-serif;
+	color:#666;
+	padding:0px 0px 12px 10px;
+	margin-left:10px;
+	display: block;
+	height:28px;
+	float:left;
+}
+.testresult span{
+	padding:10px 20px 12px 10px;
+	margin: 0px 0px 0px 20px;
+	display:block;
+	float:right;
+	white-space: nowrap;
+}
+.shortPass{
+	background:url(images/red.png) no-repeat 0 0;
+}
+.shortPass span{
+	background:url(images/red.png) no-repeat top right;
+}
+.badPass{
+	background:url(images/red.png) no-repeat 0 0;
+}
+.badPass span{
+	background:url(images/red.png) no-repeat top right;
+}
+.goodPass{
+	background:url(images/yellow.png) no-repeat 0 0;
+}
+.goodPass span{
+	background:url(images/yellow.png) no-repeat top right;
+}
+.strongPass{
+	background:url(images/green.png) no-repeat 0 0;
+}
+.strongPass span{
+	background:url(images/green.png) no-repeat top right;
+}
+/* End Css Password Meter*/
+
+#PetunjukTitle
+{
+    display:block;
+    width:98%;
+    padding:10px;
+    height:30px;
+    font-size:10pt;
+    font-weight:bold;
+    background-color:#ebebec;
+    position:relative;
+}
+
+#BtnNextDaftar
+{
+    float:right;
+    position:relative;
+    padding:3px 10px 2px 10px;    
+}
+
+#PetunjukTab
+{
+     font-size:10pt !important;
+     border:0px !important;
+}
+
+.tabClass
+{
+    padding:10px;    
+    border:1px solid #d5d5de !important;
+    min-height : 350px !important;
+}
+
+.letterLi
+{
+    list-style-type: lower-alpha;
+    margin-bottom : 10pt;
+}
+
+.letterLi2
+{
+    list-style-type: lower-alpha;
+    margin-bottom : 3pt;
+}
+
+.HeaderDaftar
+{
+    position:relative;display:block;width:100%;
+    height: 84px;
+    border:0px solid red; 
+    background: url('images/bg_header.png') repeat-x;
+}
+
+.require {color:red }
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none !important;
+    /*padding-bottom: 1px !important;*/
+
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}

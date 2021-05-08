@@ -1,23 +1,33 @@
-# Compiled class file
-*.class
+# yii console command
+/yii
 
-# Log file
-*.log
+# runtime
+.data
 
-# BlueJ files
-*.ctxt
+# phpstorm project files
+.idea
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# netbeans project files
+nbproject
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml

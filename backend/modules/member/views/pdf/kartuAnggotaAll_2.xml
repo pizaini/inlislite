@@ -1,0 +1,86 @@
+<pdf>
+    <dynamic-page margin="0" width="1004px" height="618px" font-type="DejaVuSans">
+    	<?php 
+		$id = $data["id"];
+		$LocID = $data["LocID"];
+    	foreach ($id as $key => $value): ?>
+        <?php
+			$model = \common\models\Members::findOne($value);
+	        $separator = DIRECTORY_SEPARATOR;
+	        
+	        $backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}bg_cardmember".Yii::$app->config->get('KartuAnggota').".png";
+
+	        //$backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}template_membership_card_".Yii::$app->config->get('KartuAnggota').".png";
+	       
+	        $image = Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}$model->PhotoUrl";
+	        
+	        if (!realpath($image) || $model->PhotoUrl == NULL) 
+	        {
+	            $image=Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}nophoto.jpg";
+	        }
+
+	        if(strlen($model->Fullname) > 25){
+	        	$font_size = 'font-size="28px"';
+	        }
+        ?>       
+        <div height="618px" width="1020px" background.image="<?php echo $backImage; ?>">
+			<!-- Kiri -->
+			<div float="left"  width="1000px"  height="579px" >
+
+				<img float="left" src="<?php echo $image; ?>" margin-top="208px" margin-left="42px" width="205px" height="221px" border.size="8" border.color="white"/>
+
+				<div float="left" margin-top="208px" margin-left="50px" font-size="28px" width="760px" height="250px">
+					<div width="200px" float="left" <?= $font_size ?>>
+						Nomor
+					</div>
+					<div width="430px" float="left" <?= $font_size ?>>
+						: <?php echo $model->MemberNo; ?>
+					</div>
+					<div width="200px" float="left" <?= $font_size ?>>
+						Nama
+					</div>
+					<div width="500px" float="left" <?= $font_size ?>>
+						<!-- : <?php echo 'I GUSTI LANANG AGUNG KUSUMA ARTHA'; ?> -->
+						<table border-type="none" border.size="0px" >
+							<tr border-type="none" >
+								<td border-type="none" width="20px" text-align="center">:</td>
+								<td border-type="none" margin-left="5px"><?php echo strtoupper($model->Fullname); ?></td>
+							</tr>
+						</table>
+					</div>
+					<div width="200px" float="left" <?= $font_size ?>>
+						Jenis
+					</div>
+					<div width="430px" float="left" <?= $font_size ?>>
+						: <?php echo $model->jenisAnggota->jenisanggota; ?>
+					</div>
+					<div width="200px" margin-top="5px" float="left" font-size="24px">
+						Lokasi Perpustakaan
+					</div>
+					<div width="430px" margin-top="5px" float="left" <?= $font_size ?>>
+						: <?php echo $LocID[0]; ?>
+					</div>
+
+
+					<div width="610px" float="left" margin-top="40px" <?= $font_size ?>>
+						Berlaku Hingga <?php echo date("d-m-Y", strtotime($model->EndDate)); ?>
+					</div>
+				</div>
+
+				<div float="left" margin-top="10px" margin-left="155px" font-size="36px" width="920px" >
+						<barcode  font-style="bold" min-width="920px" type="code39"  factor="3.50" font-size="10px" code="<?php echo strtoupper($model->MemberNo); ?>"  background-color="#ffffff"/>
+				</div>
+
+
+			</div>
+			<!-- Kanan -->
+		
+			<break />
+        </div>
+        <?php endforeach; ?> 
+     </dynamic-page>
+</pdf>
+
+
+
+

@@ -1,0 +1,58 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+body.blank > div.wrap {
+    background-image:url(../img/bg.png);
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body.blank > div.wrap > .container {
+    padding: 0;
+}
+
+
+
+.jumbotron {
+    text-align: center;
+    /*background-color: transparent;)*/
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.open > .dropdown-menu
+{
+    -webkit-animation-name:flipInX;
+    -moz-animation-name:flipInX;
+    -o-animation-name:flipInX;
+    animation-name:flipInX;
+    -webkit-animation-duration:.4s;
+    -moz-animation-duration:.4s;
+    -o-animation-duration:.4s;
+    animation-duration:.4s;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both
+}
+
+
+img.border
+        {
+            display: block;
+            padding: 8px;
+            border: solid;
+            border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+            border-width: 1px 2px 2px 1px;
+            background-color: white;
+        }

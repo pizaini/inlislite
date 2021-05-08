@@ -1,0 +1,26 @@
+<pdf>
+    <page margin="0" width="1004px" height="618px" font-type="DejaVuSans">
+        <div height="630px" width="1020px" background.color="#ffe061" background.image="<?php echo $data["backImage"]; ?>">
+			<!-- Kiri -->
+			<div float="left"  width="600px"  height="579px" >
+				<!-- Nama -->
+               <div  margin-top="180px" text-align="center" font-size="36px" float="center" font-style="bold" >
+               	<div float="left" width="10%">
+					 <img src="<?php echo $data['imageMember']; ?>" width="200px" height="220px" border.size="8" border.color="white" /> 
+				</div>
+				<div float="left" width="10%">
+					 <img src="<?php echo $data['imageMember']; ?>" width="200px" height="220px" border.size="8" border.color="white" /> 
+				</div>
+               
+                	
+					<br/>
+                    <barcode type="code39"  factor="3.50" font-size="10px" code="<?php echo $model->MemberNo; ?>"  background-color="#ffffff"/>                       
+                </div>
+                                        
+				
+			</div>
+			
+			<break />
+        </div>
+    </page>
+</pdf>

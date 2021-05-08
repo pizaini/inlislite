@@ -1,0 +1,62 @@
+<?php
+
+// echo $sql;
+?>
+
+<div class="panel panel-default panel-body" style="font-family: times new roman; border:0px; margin:40px; margin-top:0px;" >
+
+	<center style="text-align: center; font-weight: bold;">
+		<p style="text-align: center; font-size: 14px">
+			<?= yii::t('app','Daftar Penerbit per Group')?> <br>			
+		</p>
+	</center>
+
+	<center style="text-align: center; font-size: 11px;">	
+		<table width="100%" border="1" class="table table-bordered" style="text-align: center; border-collapse: collapse; border: 1px solid black; font-size: 13px; font-family: times new roman;">
+					<tr class="success">
+						<td style="font-weight: bold;">
+							No.
+						</td>
+						<td style="font-weight: bold;">
+							<?php //if ($kriterias == 'data_entry'){ echo "Periode"; }
+							//else{ echo "Periode Pendaftaran";} ?>
+							<?= yii::t('app','Nama Group')?>
+						</td>
+						<td style="font-weight: bold;">
+							<?= yii::t('app','Nama Penerbit')?>
+						</td>
+						<td style="font-weight: bold;">
+							<?= yii::t('app','Alamat Penerbit')?>
+						</td>
+						<td style="font-weight: bold;">
+							<?= yii::t('app','Kota')?>
+						</td>
+					</tr>
+					<?php $i = 1; ?>
+					<?php foreach ($TableLaporan as $TableLaporan): ?>
+						<tr>
+							<td>
+								<?= $i ?>
+							</td>
+							<td>
+								<?= $TableLaporan['nama_group'] ?>
+							</td>
+							<td>
+								<?= $TableLaporan['nama_penerbit'] ?>
+							</td>
+							<td>
+								<?= $TableLaporan['alamat'] ?>
+							</td>
+							<td>
+								<?= $TableLaporan['kota'] ?>
+							</td>
+						</tr>
+						<?php $i++ ?>
+					<?php endforeach ?>
+				</table>
+
+<!-- <?php print_r($TableLaporan); ?> -->
+
+
+	</center>
+</div>

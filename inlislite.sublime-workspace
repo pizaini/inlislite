@@ -1,0 +1,1332 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"member",
+				"member_id"
+			],
+			[
+				"var",
+				"var_dump($model['DueDate"
+			],
+			[
+				"Memb",
+				"MemberNo"
+			],
+			[
+				"MASTER",
+				"MasterJurusan"
+			],
+			[
+				"MASter",
+				"MasterFakultas〔class〕"
+			],
+			[
+				"ju",
+				"MasterJurusan〔class〕"
+			],
+			[
+				"Jeni",
+				"JenisPermohonan〔class〕"
+			],
+			[
+				"i",
+				"isset"
+			],
+			[
+				"iden",
+				"$identityTypeId〔variable〕"
+			],
+			[
+				"fin",
+				"find"
+			],
+			[
+				"model",
+				"models"
+			],
+			[
+				"Mem",
+				"Members"
+			],
+			[
+				"Member",
+				"MemberNo"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"tr",
+				"trim"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"jenis",
+				"jenisKelamin"
+			],
+			[
+				"Master",
+				"MasterUangJaminan"
+			],
+			[
+				"Lock",
+				"LockersSearch〔class〕"
+			],
+			[
+				"mo",
+				"models"
+			],
+			[
+				"wo",
+				"Worksheets〔class〕"
+			],
+			[
+				"ba",
+				"background-color: 〔property〕"
+			],
+			[
+				"com",
+				"common\\components\\behaviors\\DateConverter"
+			],
+			[
+				"session_",
+				"session_id"
+			],
+			[
+				"fon",
+				"font-size: 〔property〕"
+			],
+			[
+				"pad",
+				"padding-bottom: 〔property〕"
+			],
+			[
+				"MembersO",
+				"Membersonline〔class〕"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"Re",
+				"registerDate〔variable〕"
+			],
+			[
+				"regis",
+				"registerDate"
+			],
+			[
+				"val",
+				"valid"
+			],
+			[
+				"E",
+				"Error"
+			],
+			[
+				"jeni",
+				"$jenisIdentiasNIK〔variable〕"
+			],
+			[
+				"Meme",
+				"MemberHelpers〔namespace〕"
+			],
+			[
+				"Mas",
+				"MasterJenisIdentitas〔class〕"
+			],
+			[
+				"Jen",
+				"JenisKelamin〔namespace〕"
+			],
+			[
+				"jen",
+				"JenisKelamin〔class〕"
+			],
+			[
+				"ma",
+				"$maxMemberNo〔variable〕"
+			],
+			[
+				"re",
+				"$result〔variable〕"
+			],
+			[
+				"ta",
+				"tanggal"
+			],
+			[
+				"comm",
+				"common"
+			],
+			[
+				"Wo",
+				"Worksheets〔class〕"
+			],
+			[
+				"Members",
+				"MemberFieldSearch〔class〕"
+			],
+			[
+				"Jenis",
+				"JenisPermohonan"
+			],
+			[
+				"Ju",
+				"MasterJurusan〔class〕"
+			],
+			[
+				"Kelas",
+				"KelasSiswa"
+			],
+			[
+				"Kel",
+				"KelasSiswa〔class〕"
+			],
+			[
+				"J",
+				"JenisAnggota"
+			],
+			[
+				"MasterP",
+				"MasterPendidikan"
+			],
+			[
+				"Je",
+				"JenisKelamin"
+			],
+			[
+				"Ci",
+				"CityNow"
+			],
+			[
+				"pro",
+				"province"
+			],
+			[
+				"label",
+				"labelOptions"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"col",
+				"columnOptions"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Add",
+				"Address"
+			],
+			[
+				"TYPE_",
+				"TYPE_SUCCESS〔constant〕"
+			],
+			[
+				"j",
+				"$jenis_perpus〔variable〕"
+			],
+			[
+				"MemberF",
+				"MembersForm〔class〕"
+			],
+			[
+				"M",
+				"MembersForm"
+			],
+			[
+				"he",
+				"helpers"
+			],
+			[
+				"h",
+				"helpers"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"U",
+				"Url〔class〕"
+			],
+			[
+				"be",
+				"behaviors"
+			],
+			[
+				"Termin",
+				"TerminalBehavior"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"add",
+				"addRule"
+			],
+			[
+				"rese",
+				"actionResetPassword〔function〕"
+			],
+			[
+				"actionre",
+				"actionResetPassword〔function〕"
+			],
+			[
+				"yii",
+				"yii\\web\\View"
+			],
+			[
+				"no_",
+				"no_pickup	(Awb.php)"
+			],
+			[
+				"mode",
+				"model_kost_fasumum"
+			],
+			[
+				"Kos",
+				"KostFasumum"
+			],
+			[
+				"Ko",
+				"KostFasumum	(Kost.php)"
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"statu",
+				"statusVerified"
+			],
+			[
+				"user",
+				"user_id	(ProfileController.php)"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"p",
+				"profile"
+			],
+			[
+				"Ver",
+				"VerificationEmailForm"
+			],
+			[
+				"ve",
+				"verificationEmail	(VerificationEmailForm.php)"
+			],
+			[
+				"cat",
+				"catch"
+			],
+			[
+				"ProfileC",
+				"ProfileCrud"
+			],
+			[
+				"Profile",
+				"ProfileCrud"
+			],
+			[
+				"prof",
+				"Profile〔class〕"
+			],
+			[
+				"fu",
+				"fullname	(Profile.php)"
+			],
+			[
+				"php",
+				"phpid	(AutoTimestamp.php)"
+			],
+			[
+				"tex",
+				"text-align: 〔property〕"
+			],
+			[
+				"font",
+				"font-size: 〔property〕"
+			],
+			[
+				"text-",
+				"text-height: 〔property〕"
+			],
+			[
+				"borde",
+				"border-bottom: 〔property〕"
+			],
+			[
+				"bor",
+				"border-style: 〔property〕"
+			],
+			[
+				"MODE_",
+				"MODE_UTF8〔constant〕"
+			],
+			[
+				"no",
+				"no_invoice"
+			],
+			[
+				"getOptionsby",
+				"getOptionsbyKabKota〔function〕"
+			],
+			[
+				"Ar",
+				"ArrayHelper"
+			],
+			[
+				"deli",
+				"delivery	(sidebar.php)"
+			],
+			[
+				"De",
+				"Deliverydtl"
+			],
+			[
+				"Awb",
+				"AwbSearch	(PickupController.php)"
+			],
+			[
+				"_",
+				"_listAwb	(_form.php)"
+			],
+			[
+				"nop",
+				"no_pickup〔variable〕"
+			],
+			[
+				"Aw",
+				"Awb"
+			],
+			[
+				"mod",
+				"model"
+			],
+			[
+				"m",
+				"models〔namespace〕"
+			],
+			[
+				"sea",
+				"search	(AwbController.php)"
+			],
+			[
+				"retr",
+				"return"
+			],
+			[
+				"al",
+				"alert	(main.js)"
+			],
+			[
+				"cons",
+				"console	(aaaa)"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"tri",
+				"trigger_error"
+			],
+			[
+				"att",
+				"attr	(main.js)"
+			],
+			[
+				"pos",
+				"post	(PelangganController.php)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"kd",
+				"kd_services"
+			],
+			[
+				"get",
+				"getAttributes〔function〕"
+			],
+			[
+				"K",
+				"Kabkota"
+			],
+			[
+				"Kab",
+				"KabkotaSearch	KabkotaSearch"
+			],
+			[
+				"checkDat",
+				"checkDate($attribute, $params)	mixed"
+			],
+			[
+				"auth",
+				"author_id"
+			],
+			[
+				"date",
+				"date_acquisition"
+			],
+			[
+				"data",
+				"dataProvider"
+			],
+			[
+				"sear",
+				"searchModel"
+			],
+			[
+				"au",
+				"author_id〔variable〕"
+			],
+			[
+				"b",
+				"BookSearch〔class〕"
+			],
+			[
+				"A",
+				"ActiveForm〔class〕"
+			],
+			[
+				"se",
+				"selectDate"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "backend/modules/sirkulasi/controllers/PengembalianController.php",
+			"settings":
+			{
+				"buffer_size": 33360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/yiiframework.id/app/config/web.php",
+			"settings":
+			{
+				"buffer_size": 2552,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "backend/modules/sirkulasi/views/pengembalian/index.php",
+			"settings":
+			{
+				"buffer_size": 10208,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git:p",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Quick Commit"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"format",
+				"Snippet: Input-format"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:q",
+				"Git: Quick Commit"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:co",
+				"Git: Quick Commit"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Repository"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"ing",
+				"Package Control: Install Package"
+			],
+			[
+				"paka",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/inlislite3",
+		"/C/xampp/htdocs/inlislite3/backend",
+		"/C/xampp/htdocs/inlislite3/backend/modules",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/controllers",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/pengembalian",
+		"/C/xampp/htdocs/inlislite3/common/models",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views/layouts"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/inlislite3/common/models/CollectionloanitemSearch.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/controllers/PeminjamanController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/controllers/MemberController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/pengembalian/index.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/peminjaman/indexInfoAnggotaSusulan.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/pengembalian/create-susulan.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views/layouts/sidebar-member.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views/layouts/sidebar.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/peminjaman/create-susulan.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/member/_listPerpanjangan.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/akuisisi/controllers/KoleksiController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/controllers/PengembalianController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/member/index.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/controllers/PrintController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/pengembalian/viewResult.php",
+		"/C/xampp/htdocs/inlislite3/init",
+		"/C/xampp/htdocs/inlislite3/common/components/SirkulasiHelpers.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/controllers/PdfController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/_pdf.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/_pdf2.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/_pdf3.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/_pdf4.php",
+		"/C/xampp/htdocs/inlislite3/composer.json",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/kartuAnggotaAll.xml",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/peminjaman/indexInfoAnggota.php",
+		"/C/xampp/htdocs/inlislite3/vendor/kartik-v/yii2-grid/GridView.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/kartuAnggotaAll_2.xml",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/kartuAnggotaAll_3.xml",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/pdf/kartuAnggotaAll_4.xml",
+		"/C/xampp/htdocs/inlislite3/backend/modules/pengkatalogan/controllers/KatalogKarantinaController.php",
+		"/C/xampp/htdocs/inlislite3/common/models/QuarantinedCatalogSearch.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/peminjaman/_listHistori.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/views/peminjaman/viewDetailDataAnggota.php",
+		"/C/xampp/htdocs/mpdf60/examples/example08_lists.php",
+		"/C/xampp/htdocs/inlislite3/vendor/psliwa/php-pdf/lib/PHPPdf/Core/FacadeBuilder.php",
+		"/C/xampp/htdocs/inlislite3/vendor/psliwa/php-pdf/lib/PHPPdf/Core/Node/Barcode.php",
+		"/C/xampp/htdocs/inlislite3/vendor/psliwa/php-pdf/lib/PHPPdf/Core/Node/DynamicPage.php",
+		"/C/xampp/htdocs/inlislite3/vendor/psliwa/php-pdf/lib/PHPPdf/Core/Node/PageCollection.php",
+		"/C/xampp/htdocs/inlislite3/vendor/psliwa/php-pdf/lib/PHPPdf/Core/Document.php",
+		"/C/xampp/htdocs/inlislite3/common/components/SirkulasiComponent.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/sirkulasi/controllers/StockopnameController.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/MyAsset.php",
+		"/C/xampp/htdocs/inlislite3/common/config/main-local.php",
+		"/C/xampp/htdocs/inlislite3/frontend/controllers/SiteController.php",
+		"/C/xampp/htdocs/inlislite3/keanggotaan/controllers/SiteController.php",
+		"/C/xampp/htdocs/inlislite3/common/models/BacaditempatSearch.php",
+		"/C/xampp/htdocs/inlislite3/backend/controllers/SiteController.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/controllers/ApplicationController.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/models/AppInstalled.php",
+		"/C/xampp/htdocs/kiis/common/models/BacaditempatSearch.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/setting/loker/controllers/AudioBukutamuController.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/setting/audio/controllers/AudioBukutamuController.php",
+		"/C/xampp/htdocs/inlislite3/console/config/main.php",
+		"/C/xampp/htdocs/inlislite3/backend/config/main.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/controllers/ActivationController.php",
+		"/C/xampp/htdocs/inlislite3/common/config/params.php",
+		"/C/xampp/htdocs/inlislite3/vendor/inlislite/yii2-inlislitegii/behaviors/TerminalBehavior.php",
+		"/C/xampp/htdocs/inlislite3/common/models/base/AppInstalled.php",
+		"/C/xampp/htdocs/kiis/api/web/index.php",
+		"/C/xampp/htdocs/kiis/api/config/main.php",
+		"/C/xampp/htdocs/kiis/config/web.php",
+		"/C/xampp/htdocs/kiis/config/db.php",
+		"/C/xampp/htdocs/inlislite3/common/config/main.php",
+		"/C/xampp/htdocs/kiis/config/bootstrap.php",
+		"/C/xampp/htdocs/kiis/web/index.php",
+		"/C/xampp/htdocs/inlislite3/api/web/index-test.php",
+		"/D/xampp/htdocs/INLISLITE-PHP/trunk/kiis/config/bootstrap.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/models/Agama.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/controllers/AgamaController.php",
+		"/C/xampp/htdocs/inlislite3/api/config/main.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/controllers/TestController.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/controllers/CountryController.php",
+		"/C/xampp/htdocs/inlislite3/common/models/UserMemberOnlines.php",
+		"/C/xampp/htdocs/inlislite3/keanggotaan/models/PasswordResetRequestForm.php",
+		"/C/xampp/htdocs/inlislite3/api/modules/v1/models/Country.php",
+		"/C/xampp/htdocs/inlislite3/common/models/base/Agama.php",
+		"/C/xampp/htdocs/inlislite3/api/web/index.php",
+		"/C/xampp/htdocs/inlislite3/common/config/bootstrap.php",
+		"/C/xampp/htdocs/inlislite3/environments/dev/common/config/main-local.php",
+		"/C/xampp/htdocs/inlislite3/environments/index.php",
+		"/C/xampp/htdocs/inlislite3/environments/dev/backend/config/main-local.php",
+		"/C/xampp/htdocs/inlislite3/environments/dev/.htaccess",
+		"/C/xampp/htdocs/inlislite3/environments/publish/.htaccess",
+		"/C/xampp/htdocs/inlislite3/backend/modules/akuisisi/views/koleksi-import/index.php",
+		"/C/xampp/htdocs/inlislite3/backend/modules/member/views/member/import.php",
+		"/C/xampp/htdocs/inlislite3/common/models/base/JenisAnggota.php",
+		"/C/xampp/htdocs/inlislite3/common/models/JenisAnggota.php",
+		"/C/xampp/htdocs/New folder/learn/yii2-store/environments/prod/common/config/main-local.php",
+		"/C/xampp/htdocs/inlislite3/environments/prod/bacaditempat/config/main-local.php",
+		"/C/xampp/htdocs/inlislite3/console/controllers/CleanAssetsController.php",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs/inlislite3/common/components/CleanVendorsController.php",
+		"/C/xampp/htdocs/inlislite3/common/components/ActiveResponse.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views/layouts/heading-member.php",
+		"/C/xampp/htdocs/inlislite3/common/components/MemberHelpers.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/extensions.php",
+		"/C/xampp/htdocs/inlislite3/README.md",
+		"/C/xampp/htdocs/inlislite3/backend/modules/setting/katalog/controllers/ParameterKatalogDetailController.php",
+		"/C/xampp/htdocs/inlislite3/backend/views/site/location.php",
+		"/C/xampp/htdocs/inlislite3/backend/views/site/login.php",
+		"/C/xampp/htdocs/inlislite3/common/components/CollectionHelpers.php",
+		"/C/xampp/htdocs/inlislite3/common/components/CatalogHelpers2.php",
+		"/C/xampp/htdocs/inlislite3/common/components/CatalogHelpers.php",
+		"/C/xampp/htdocs/inlislite3/inliscore/kw-themes-adminlte/views/layouts/heading.php",
+		"/D/xampp/htdocs/inlislite3/common/components/CatalogHelpers2.php",
+		"/D/xampp/htdocs/inlislite3/common/components/MemberHelpers.php",
+		"/D/xampp/htdocs/inlislite3/common/components/SirkulasiComponent.php",
+		"/D/xampp/htdocs/inlislite3/common/components/DirectoryHelpers.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/ITEMKOLEKSI.php",
+		"/D/xampp/htdocs/inlislite3/common/models/ItemKoleksi.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/JenisAnggota.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/KelompokPelanggaran.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/JenisPelanggaran.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/KelasSiswa.php",
+		"/D/xampp/htdocs/inlislite3/common/models/KelasSiswa.php",
+		"/D/xampp/htdocs/inlislite3/common/models/MasterKelasBesar.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/Departments.php",
+		"/D/xampp/htdocs/inlislite3/backend/modules/member/controllers/MemberController.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/MasterJurusan.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/Agama.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/MasterFakultas.php",
+		"/D/xampp/htdocs/inlislite3/common/models/Agama.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/Kelassiswa.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/StatusAnggota.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/MasterJenisIdentitas.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/MasterPendidikan.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/JenisKelamin.php",
+		"/D/xampp/htdocs/inlislite3/common/models/base/MasterStatusPerkawinan.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 103.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\inlislite3\\backend\\modules\\sirkulasi",
+			"C:\\xampp\\htdocs\\inlislite3\\backend",
+			"C:\\xampp\\htdocs\\inlislite3\\backend\\modules",
+			"C:\\xampp\\htdocs\\inlislite3\\backend",
+			"C:\\xampp\\htdocs\\inlislite3",
+			"C:\\xampp\\htdocs",
+			"D:\\xampp\\htdocs\\inlislite3\\keanggotaan",
+			"<project>",
+			"D:\\xampp#1\\htdocs",
+			"D:\\xampp\\htdocs\\lemhannas",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dataProviderPeminjaman",
+			"LoanDate",
+			"tglTransaksi",
+			"kelas",
+			"Iframe1Slip",
+			"koleksiLoanOutstanding",
+			"modelCountCategory",
+			"dataProviderHistoriCountCategory",
+			"koleksiLoanOutstanding",
+			"getTotalCount",
+			"getTot",
+			"getTotalCount()",
+			"TYPE_CODE39",
+			"empty",
+			"AudioBukutamu",
+			"'/../",
+			"countries",
+			"getRules",
+			"empty",
+			"Yii::$app->location->get()",
+			"empty",
+			"error",
+			"compareString",
+			"password_verify",
+			"getImageUrl",
+			"DepDrop",
+			"refValues",
+			"array",
+			"<?",
+			"message",
+			"statusAnggota",
+			"createdAt",
+			"generateRelations",
+			"error",
+			"inliscore\\adminlte",
+			"'))->",
+			"generateSalt",
+			"cost",
+			"generateRandomKey",
+			"generateSalt",
+			"generatePasswordHash",
+			"password_verify",
+			"LoginForm",
+			"frontend",
+			"session",
+			"<br/>Silahkan menghubungi petugas layanan keanggotaan untuk mendapatkan kartu anggota anda.\n            ",
+			"setPassword",
+			"Satuan",
+			"birth",
+			"bir",
+			"DateOfBirth",
+			"Email",
+			"email",
+			"upload",
+			"foto",
+			"Webcam.set({\n                                    width: 320,\n                                    height: 240,\n                                    image_format: 'jpeg',\n                                    //jpeg_quality: 90\n                                });\n                                Webcam.attach( '#inlis_camera' );",
+			"collectionCategory",
+			"Sex_id",
+			"jeniskelamin",
+			"memloancat",
+			"jenis",
+			"IsLunasBiayaPendaftaran",
+			"biaya",
+			"#biaya",
+			"            \n",
+			"date",
+			"DateOfBirth",
+			"glDate",
+			"DateConverter",
+			"PicPath",
+			"BarCode",
+			"User_id",
+			"kelas",
+			"uploadAsset",
+			"@btnPrimaryBackground",
+			"JenisPermohonan",
+			"Departments::find()->all()",
+			"print_r",
+			"array",
+			"135px",
+			"inden",
+			"MM",
+			"setting",
+			"%;'],",
+			"150px",
+			"alert",
+			"alertContainerOptions",
+			"remove",
+			"delete",
+			"Value",
+			"Peraturan",
+			"bootstrap",
+			"TbGridview",
+			"',\n",
+			"$model",
+			"findModel",
+			"C128B",
+			"no_invoice",
+			"'access' => [\n                'class' => AccessControl::className(),\n                 'only' => ['detail'],\n                'rules' => [\n                    [\n                        'actions' => ['index','create','update','view','detail'],\n                        'allow' => true,\n                        'roles' => ['@'],\n                    ],\n                ],\n            ],",
+			"saveOptions",
+			"deleteOptions",
+			"where",
+			"$message",
+			"modelAddress",
+			"modelsAddress",
+			"modelCustomer",
+			"<?php echo $this->theme->baseUrl ?>/assets",
+			"logo-nav",
+			"logo",
+			"Kaushan Script",
+			"logo",
+			"title",
+			"        \n",
+			"encodeLabels",
+			"<?= $directoryAsset ?>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"inliscore\\theme\\keanggotaan",
+			"LoginKeanggotaanForm",
+			"keanggotaan",
+			"$satuan",
+			"136px",
+			"$profile",
+			"modelBooks",
+			"modelsBooks",
+			"model",
+			"<?php echo Url::to($baseurl); ?>",
+			"<?= $baseurl ?>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "backend/modules/sirkulasi/controllers/PengembalianController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								998,
+								998
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 557.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/yiiframework.id/app/config/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								614
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backend/modules/sirkulasi/views/pengembalian/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8705,
+								8705
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 61.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "inlislite.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"daftarpeng",
+				"inlislite3\\backend\\modules\\member\\views\\daftar-pengunjung\\index.php"
+			],
+			[
+				"memberguese",
+				"inlislite3\\common\\models\\MemberguessesSearch.php"
+			],
+			[
+				"membergues",
+				"inlislite3\\common\\models\\MemberguessesSearch.php"
+			],
+			[
+				"membergu",
+				"inlislite3\\bacaditempat\\models\\MemberguessesSearch.php"
+			],
+			[
+				"memberg",
+				"inlislite3\\common\\models\\MemberguessesSearch.php"
+			],
+			[
+				"memberge",
+				"inlislite3\\bacaditempat\\models\\MemberguessesSearch.php"
+			],
+			[
+				"mediakol",
+				"inlislite3\\backend\\modules\\setting\\akuisisi\\views\\media-koleksi\\index.php"
+			],
+			[
+				"mediako",
+				"inlislite3\\backend\\modules\\setting\\akuisisi\\controllers\\MediaKoleksiController.php"
+			],
+			[
+				"app.",
+				"inlislite3\\backend\\messages\\id\\app.php"
+			],
+			[
+				"app",
+				"inlislite3\\backend\\messages\\id\\app.php"
+			],
+			[
+				"member",
+				"inlislite3\\common\\models\\Members.php"
+			],
+			[
+				"app.p",
+				"inlislite3\\backend\\messages\\id\\app.php"
+			],
+			[
+				"members",
+				"inlislite3\\common\\models\\Members.php"
+			],
+			[
+				"app.php",
+				"inlislite3\\backend\\messages\\id\\app.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"masterj",
+				"common\\models\\MasterJenisIdentitas.php"
+			],
+			[
+				"common/models/base/membersform",
+				"common\\models\\base\\MembersForm.php"
+			],
+			[
+				"common/models/masterjurusan",
+				"common\\models\\MasterJurusan.php"
+			],
+			[
+				"modules/setting/member/views/jurusan/ind",
+				"backend\\modules\\setting\\member\\views\\jurusan\\index.php"
+			],
+			[
+				"jenisanggo",
+				"backend\\modules\\setting\\member\\controllers\\JenisAnggotaController.php"
+			],
+			[
+				"sidebar",
+				"inliscore\\kw-themes-adminlte\\views\\layouts\\sidebar.php"
+			],
+			[
+				"jenisan",
+				"common\\models\\base\\Jenisanggota.php"
+			],
+			[
+				"settingparamet",
+				"common\\models\\base\\Settingparameters.php"
+			],
+			[
+				"_formkar",
+				"backend\\modules\\setting\\member\\views\\kartu-anggota\\_formKartuAnggota.php"
+			],
+			[
+				"mya",
+				"inliscore\\kw-themes-frontend\\material\\MyAsset.php"
+			],
+			[
+				"app.ph",
+				"backend\\messages\\id\\app.php"
+			],
+			[
+				"pelangga",
+				"putralog\\models\\Pelanggan.php"
+			],
+			[
+				"side",
+				"putralog\\kwcore\\kw-themes-adminlte\\views\\layouts\\sidebar.php"
+			],
+			[
+				"inde",
+				"basiccustom\\views\\site\\index.php"
+			],
+			[
+				"",
+				"basic\\config\\web.php"
+			],
+			[
+				"main",
+				"basic\\views\\layouts\\main.php"
+			],
+			[
+				"com",
+				"basiccustom\\composer.json"
+			],
+			[
+				"exte",
+				"kampoengweb.com\\kwcore\\extensions.php"
+			],
+			[
+				"exten",
+				"kampoengweb.com\\kwcore\\extensions.php"
+			],
+			[
+				"frontend/config/ma",
+				"yii2_rbac\\frontend\\config\\main.php"
+			],
+			[
+				"kwcore/layouts/",
+				"kampoengweb.com\\kwcore\\kw-themes-adminlte\\views\\layouts\\sidebar.php"
+			],
+			[
+				"backend/layout/main",
+				"kampoengweb.com\\backend\\views\\layouts\\main-login.php"
+			],
+			[
+				"backend/view/la",
+				"yii2_rbac\\backend\\views\\layouts\\main.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
