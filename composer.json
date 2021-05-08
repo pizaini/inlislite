@@ -1,5 +1,5 @@
 {
-    "name": "Inlislite",
+    "name": "pizaini/inlislite",
     "description": "INLIS Lite merupakan perangkat lunak (software) aplikasi otomasi perpustakaan yang dibangun dan dikembangkan oleh Perpustakaan Nasional Republik Indonesia (Perpusnas) sejak tahun 2011. ",
     "keywords": ["inlislite", "inlislite perpusnas", "inlislite perpustakaan nasional republik indonesia", "inlis"],
     "homepage": "http://inlislite.perpusnas.go.id",
@@ -12,7 +12,7 @@
             "homepage": "http://www.inlislite.perpusnas.go.id/"
         }
     ],
-    
+
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
