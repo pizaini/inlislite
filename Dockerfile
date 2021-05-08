@@ -16,7 +16,7 @@ WORKDIR /app/web
 #install rar extension
 
 #run composer install
-RUN composer install
+RUN composer install --working-dir=/app/web
 
 #change permission
 RUN chmod 755 -R /app/web
