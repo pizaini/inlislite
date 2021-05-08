@@ -11,7 +11,7 @@ use common\models\Worksheets;
  */
 class DirectoryHelpers
 {
-   
+
     public static function GetBytes($val) {
         $val = trim($val);
         $last = strtolower($val[strlen($val)-1]);
@@ -27,16 +27,16 @@ class DirectoryHelpers
 
         return $val;
     }
-    
+
     public static function GetDirWorksheet($worksheetid) {
-        
+
         //jika tidak mempunyai gambar maka akan di set sampul secara default.
         $model = Worksheets::findOne($worksheetid);
-           
+
         return $model->Name;
     }
 
-    public function mimeType($file)
+    public static function mimeType($file)
     {
         // echo $file;die;
         $mimetype = mime_content_type($file);
@@ -61,19 +61,19 @@ class DirectoryHelpers
         {
             mkdir($dirUserID , 0777);
         }
-        
+
         $fileZip=$prefixFileDownload.$now.".zip";
         $pathZip= $dirUserID.DIRECTORY_SEPARATOR.$fileZip;
         $pathReadyDownload = $dirLevel.$mainPath.$userID.DIRECTORY_SEPARATOR.$fileZip;
-        
+
 
         if(file_exists($pathZip)) {
-            unlink ($pathZip); 
+            unlink ($pathZip);
         }
 
         if ($zip->open($pathZip,  \ZipArchive::CREATE)) {
            foreach ($files as $file) {
-                $filename =  pathinfo(realpath($file), PATHINFO_BASENAME); 
+                $filename =  pathinfo(realpath($file), PATHINFO_BASENAME);
                 $zip->addFile($file,$filename);
             }
             $zip->close();
@@ -89,33 +89,33 @@ class DirectoryHelpers
      * @param  array $mime [allowed mime]
      * @return mixed
      */
-    public function deleteFile($file,$ext,$mime){  
+    public function deleteFile($file,$ext,$mime){
         $rar_file = \rar_open($file) or die("Can't open Rar archive");
-        $destination = pathinfo(realpath($file), PATHINFO_DIRNAME); 
-        $filefolder =  pathinfo(realpath($file), PATHINFO_FILENAME); 
+        $destination = pathinfo(realpath($file), PATHINFO_DIRNAME);
+        $filefolder =  pathinfo(realpath($file), PATHINFO_FILENAME);
         $entries = \rar_list($rar_file);
 
         foreach ($entries as $entry) {
             $entry->extract($destination. DIRECTORY_SEPARATOR .$filefolder);
         }
 
-        \rar_close($rar_file); 
-        
-    } 
+        \rar_close($rar_file);
+
+    }
     public static function RemoveDirRecursive($dir)
     {
-        if (is_dir($dir)) { 
-         $objects = scandir($dir); 
-         foreach ($objects as $object) { 
-           if ($object != "." && $object != "..") { 
+        if (is_dir($dir)) {
+         $objects = scandir($dir);
+         foreach ($objects as $object) {
+           if ($object != "." && $object != "..") {
              if (is_dir($dir."/".$object))
                self::RemoveDirRecursive($dir."/".$object);
              else
-               unlink($dir."/".$object); 
-           } 
+               unlink($dir."/".$object);
+           }
          }
-         rmdir($dir); 
-       } 
+         rmdir($dir);
+       }
     }
 
     public static function CheckDir($dir,$ext=null,$mime=null)
@@ -126,16 +126,16 @@ class DirectoryHelpers
         $mime=\Yii::$app->params['allowedMime'];
         foreach ($iterator as $file) {
             if (!$file->isDir()) {
-                
+
                 //check file by extension
                 if (!in_array($file->getExtension(),$ext)) {
-                    return false;         
-                } 
+                    return false;
+                }
                 //check file by mime
                 if (!in_array(\mime_content_type($file->getPathname()),$mime)) {
                     return false;
                 }
-            }    
+            }
         }
         return true;
     }
@@ -177,7 +177,7 @@ class DirectoryHelpers
                 return $tempPath;
                 break;
             case 2:
-                
+
             // echo '<pre>';print_r($datas);die;
                 $wName=$datas[0]['name'];
                 $file=$datas[0]['FileFlash'];
@@ -240,9 +240,9 @@ class DirectoryHelpers
     				    return $returnPath;
     				}
                 }
- 			    break;       	
- 			return false;	
-        } 
+ 			    break;
+ 			return false;
+        }
 
     }
 
@@ -340,9 +340,9 @@ class DirectoryHelpers
                         return $returnPath;
                     }
                 }
-                break;          
-            return false;   
-        } 
+                break;
+            return false;
+        }
 
     }
 
@@ -371,7 +371,7 @@ class DirectoryHelpers
                self::checkFile($name,$ext,$pathdir,$newpath,$counter,$newname);
         }
     }
-    
 
-    
+
+
 }

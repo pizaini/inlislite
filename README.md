@@ -7,6 +7,11 @@ Source code berikut merupakan modifikasi yang dibuat untuk menyesuaikan pengatur
 * Modifikasi favicon
 * Modifikasi halaman utama (landing page)
 
+##Docker run
+```shell
+docker run -d -p 8083:80 -v "C:\server\www\inlislite":/app/web -e DB_HOST="host.docker.internal" -e DB_PORT="3306" -e DB_NAME="inlislite" -e DB_USERNAME="root" -e DB_PASSWORD="xxxxxx"  yiisoftware/yii2-php:5.6-apache
+```
+
 #TENTANG INLISLITE VERSI 3 (Original readme)
 ==================================
 
