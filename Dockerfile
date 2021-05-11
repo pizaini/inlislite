@@ -15,8 +15,23 @@ WORKDIR /app/web
 
 #install rar extension
 
-#run composer install
-RUN composer install
+##Configure composer##
+#install composer v1
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php --version=1.10.22
+RUN composer self-update --1
 
-#change permission
+#RUN composer config github-oauth.github.com GITHUB_TOKEN
+RUN composer config github-oauth.github.com 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
+RUN composer global require fxp/composer-asset-plugin
+
+#run composer install
+RUN composer install --no-dev
+
+#Rename dir
+RUN mv /app/web/vendor/bower-asset /app/web/vendor/bower
+RUN mv /app/web/vendor/bower/jquery-querybuilder /app/web/vendor/bower/jQuery-QueryBuilder
+
+#change permissions and owner
 RUN chmod 755 -R /app/web
+RUN chown www-data:www-data -R /app/web

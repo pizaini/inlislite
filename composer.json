@@ -12,7 +12,6 @@
             "homepage": "http://www.inlislite.perpusnas.go.id/"
         }
     ],
-
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
@@ -38,7 +37,7 @@
         "drsdre/yii2-wizardwidget": "*",
         "2amigos/yii2-chartjs-widget": "~2.0",
         "2amigos/yii2-highcharts-widget": "~1.0",
-        "bower-asset/sweetalert" : "*",
+        "bower-asset/sweetalert" : "1.1.3",
         "2amigos/yii2-file-upload-widget": "~1.0",
         "hscstudio/yii2-mimin": "*",
         "kartik-v/yii2-field-range": "*",
@@ -59,13 +58,20 @@
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
-    "config": {
-        "process-timeout": 1800
-    },
-    "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
+    ],
+    "config": {
+        "fxp-asset": {
+            "enabled": false,
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "process-timeout": 1800
     }
 }

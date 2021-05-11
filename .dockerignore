@@ -2,6 +2,8 @@
 .gitignore
 .bowerrc
 CHANGE.md
+composer.lock
+composer.phar
 index-test.php
 indexing.cmd
 init
@@ -17,5 +19,6 @@ PERFORMANCE-TUNING.md
 README.md
 requirements.php
 revision_info.txt
+vendor
 yii
 yii.bat

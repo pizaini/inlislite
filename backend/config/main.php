@@ -29,7 +29,7 @@ return [
             'enableAutoLogin' => true,
             'enableSession' => true,
             'autoRenewCookie' => true,
-            //'authTimeout' => 14400, //detik 
+            //'authTimeout' => 14400, //detik
         ],
         'session' => [
             'class' => 'yii\web\DbSession',
@@ -50,7 +50,7 @@ return [
         'view' => [
             'theme' => 'inliscore\adminlte\Theme',
         ],
-        
+
     ],
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
@@ -61,11 +61,11 @@ return [
             'site/error',
             'site/logout',*/
             'debug/*',
-            'gii/*',
+//            'gii/*',
             //'mimin/*', // only in dev mode
             //'admin/*', // only in dev mode
             //'*'
-           
+
 
         ]
     ],

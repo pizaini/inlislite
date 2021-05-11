@@ -10,7 +10,7 @@ return [
     'bootstrap' => ['log', 'gii'],
     'controllerNamespace' => 'console\controllers',
     'modules' => [
-        'gii' => 'yii\gii\Module',
+//        'gii' => 'yii\gii\Module',
     ],
     'controllerMap' => [
         'clean-vendors' => [
