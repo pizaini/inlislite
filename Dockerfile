@@ -1,6 +1,8 @@
 FROM yiisoftware/yii2-php:5.6-apache
 MAINTAINER pizaini <github.com/pizaini>
 
+ARG GITHUB_TOKEN
+
 #created web root dir
 RUN mkdir /app/web
 
@@ -21,8 +23,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 RUN php composer-setup.php --version=1.10.22
 RUN composer self-update --1
 
-#RUN composer config github-oauth.github.com GITHUB_TOKEN
-RUN composer config -g github-oauth.github.com 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
+RUN composer config github-oauth.github.com GITHUB_TOKEN
 RUN composer global require fxp/composer-asset-plugin
 
 #run composer install
