@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker build -t pizaini/inlislite:latest --build-arg GITHUB_TOKEN=$GITHUB_TOKEN .
+#if [ $DOCKER_TAG == "latest" ]
+#then
+#  docker build -t pizaini/inlislite:latest --build-arg GITHUB_TOKEN=$GITHUB_TOKEN .
+#fi
+#
+#if [$SOURCE_BRANCH == "stai-tbh"]
+#then
+#  docker build -t pizaini/inlislite:stai-tbh --build-arg GITHUB_TOKEN=$GITHUB_TOKEN .
+#fi
