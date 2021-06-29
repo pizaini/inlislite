@@ -1,0 +1,47 @@
+.multiple-input-list {}
+.multiple-input-list__item {
+    margin-bottom: 5px;
+}
+.multiple-input-list__input {
+    display: inline-block;
+    width: 80%;
+}
+
+.multiple-input-list.no-buttons
+.multiple-input-list__input {
+    display: block;
+    width: 100%;
+}
+table.multiple-input-list {
+    margin: 0;
+}
+table.multiple-input-list tr > td {
+    border: 0 !important;
+}
+table.multiple-input-list tr > td:first-child {
+    padding-left: 0;
+}
+table.multiple-input-list tr > td:last-child {
+    padding-right: 0;
+}
+table.multiple-input-list tr > th {
+    border-bottom: 1px solid #dddddd;
+}
+.multiple-input-list .form-group {
+    margin: 0 !important;
+}
+.multiple-input-list__item .label {
+    display: block;
+    font-size: 13px;
+}
+.multiple-input-list .list-cell__button {
+    width: 40px;
+}
+.multiple-input-list__item .radio,
+.multiple-input-list__item .checkbox {
+    margin: 7px 0 7px 0;
+}
+.multiple-input-list__item .radio-list .radio,
+.multiple-input-list__item .checkbox-list .checkbox {
+    margin: 0;
+}
