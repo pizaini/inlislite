@@ -1,18 +1,22 @@
-#Modified source code
-Source code berikut merupakan modifikasi yang dibuat untuk menyesuaikan pengaturan yang kami perlukan tanpa menghilangkan lisensi Inlislite V3 dari Perpusnas Indonesia. Kami bangga menggunakan produk ini dan kami selalu mendukung Perpusnas dalam memberikan layanan teknologin informasi bagi masyarakat Indonesia
+# Modified source code
+Source code berikut merupakan modifikasi yang dibuat untuk menyesuaikan pengaturan yang kami perlukan tanpa 
+menghilangkan lisensi Inlislite v3 dari Perpusnas Indonesia. Kami bangga menggunakan produk ini dan kami selalu mendukung Perpusnas dalam memberikan layanan teknologin informasi bagi masyarakat Indonesia
 
-##Modifikasi yang kami lakukan
+## Modifikasi yang kami lakukan
 * Pembuatan docker file agar aplikasi ini dapat dijalankan melalui Docker container
 * Modifikasi logo utama
 * Modifikasi favicon
 * Modifikasi halaman utama (landing page)
 
-##Docker run
+## Docker run
 ```shell
-docker run -d -p 8083:80 -v "C:\server\www\inlislite":/app/web -e DB_HOST="host.docker.internal" -e DB_PORT="3306" -e DB_NAME="inlislite" -e DB_USERNAME="root" -e DB_PASSWORD="xxxxxx"  yiisoftware/yii2-php:5.6-apache
+docker run -d -p 8083:80 -e DB_HOST="host.docker.internal" -e DB_PORT="3306" -e DB_NAME="inlislite" -e DB_USERNAME="root" -e DB_PASSWORD="xxxxxx"  pizaini/inlislite:latest
 ```
 
-#TENTANG INLISLITE VERSI 3 (Original readme)
+# Why vendor dir?
+Kami sudah mencoba menggunakan composer install menggunakan file composer.json bawaan dari Inlislite. Tetapi ada banyak library yang tidak kompatible hingga library yang tidak tersedia lagi. Sehingga terlalu banyak tracing source code yang harus dilakukan. Make it simple !.
+
+# TENTANG INLISLITE VERSI 3 (Original readme)
 ==================================
 
 INLISLite versi 3 merupakan pengembangan lanjutan dari perangkat lunak (software) aplikasi otomasi perpustakaan INLISLite versi 2.1.2 yang dibangun dan dikembangkan oleh Perpustakaan Nasional RI (Perpustakaan Nasional RI) sejak tahun 2011.

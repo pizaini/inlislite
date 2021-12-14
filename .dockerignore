@@ -20,3 +20,5 @@ requirements.php
 revision_info.txt
 yii
 yii.bat
+.idea
+.git
