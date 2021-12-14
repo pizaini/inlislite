@@ -37,3 +37,4 @@ WORKDIR /app/web
 #change permissions and owner
 RUN chmod 755 -R /app/web
 RUN chown www-data:www-data -R /app/web
+echo "ServerName localhost" >> /etc/apache2/apache2.conf
