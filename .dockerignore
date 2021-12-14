@@ -23,58 +23,58 @@ yii.bat
 .idea
 .git
 .github
-api/runtime/cache/
-api/runtime/debug/
-api/runtime/logs/
-api/web/assets/
+api/runtime/cache/*
+api/runtime/debug/*
+api/runtime/logs/*
+api/web/assets/*
 
-article/assets/
-article/runtime/cache/
-article/runtime/debug/
-article/runtime/logs/
+article/assets/*
+article/runtime/cache/*
+article/runtime/debug/*
+article/runtime/logs/*
 
-assets/
+assets/*
 
-bacaditempat/assets/
-bacaditempat/runtime/cache/
-bacaditempat/runtime/debug/
-bacaditempat/runtime/logs/
+bacaditempat/assets/*
+bacaditempat/runtime/cache/*
+bacaditempat/runtime/debug/*
+bacaditempat/runtime/logs/*
 
-backend/assets/
-backend/runtime/cache/
-backend/runtime/debug/
-backend/runtime/logs/
+backend/assets/*
+backend/runtime/cache/*
+backend/runtime/debug/*
+backend/runtime/logs/*
 
-console/runtime/cache/
-console/runtime/debug/
-console/runtime/logs/
+console/runtime/cache/*
+console/runtime/debug/*
+console/runtime/logs/*
 
-digitalcollection/assets/
-digitalcollection/runtime/cache/
-digitalcollection/runtime/debug/
-digitalcollection/runtime/logs/
+digitalcollection/assets/*
+digitalcollection/runtime/cache/*
+digitalcollection/runtime/debug/*
+digitalcollection/runtime/logs/*
 
-guestbook/assets/
-guestbook/runtime/cache/
-guestbook/runtime/debug/
-guestbook/runtime/logs/
+guestbook/assets/*
+guestbook/runtime/cache/*
+guestbook/runtime/debug/*
+guestbook/runtime/logs/*
 
-keanggotaan/assets/
-keanggotaan/runtime/cache/
-keanggotaan/runtime/debug/
-keanggotaan/runtime/logs/
+keanggotaan/assets/*
+keanggotaan/runtime/cache/*
+keanggotaan/runtime/debug/*
+keanggotaan/runtime/logs/*
 
-opac/assets/
-opac/runtime/cache/
-opac/runtime/debug/
-opac/runtime/logs/
+opac/assets/*
+opac/runtime/cache/*
+opac/runtime/debug/*
+opac/runtime/logs/*
 
-peminjamanmandiri/assets/
-peminjamanmandiri/runtime/cache/
-peminjamanmandiri/runtime/debug/
-peminjamanmandiri/runtime/logs/
+peminjamanmandiri/assets/*
+peminjamanmandiri/runtime/cache/*
+peminjamanmandiri/runtime/debug/*
+peminjamanmandiri/runtime/logs/*
 
-pengembalianmandiri/assets/
-pengembalianmandiri/runtime/cache/
-pengembalianmandiri/runtime/debug/
-pengembalianmandiri/runtime/logs/
+pengembalianmandiri/assets/*
+pengembalianmandiri/runtime/cache/*
+pengembalianmandiri/runtime/debug/*
+pengembalianmandiri/runtime/logs/*

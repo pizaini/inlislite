@@ -15,6 +15,12 @@ COPY ./docker/php.ini /usr/local/etc/php/php.ini
 #change workdir to document root
 WORKDIR /app/web
 
+COPY docker/run.sh /run.sh
+RUN chmod +x /run.sh
+
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+CMD ["/run.sh"]
+
 #install rar extension
 
 ##Configure composer##
@@ -33,8 +39,3 @@ WORKDIR /app/web
 #Rename dir
 #RUN mv /app/web/vendor/bower-asset /app/web/vendor/bower
 #RUN mv /app/web/vendor/bower/jquery-querybuilder /app/web/vendor/bower/jQuery-QueryBuilder
-
-#change permissions and owner
-RUN chmod 755 -R /app/web
-RUN chown www-data:www-data -R /app/web
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
