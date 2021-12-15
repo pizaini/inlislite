@@ -36,6 +36,9 @@ WORKDIR /docker
 RUN zip -s- vendor.zip -O full.zip
 RUN unzip full.zip -d /app/web/
 
+#Delete unnecessary stuff
+RUN rm -rf /docker/vendor
+
 #change workdir to document root
 WORKDIR /app/web
 
