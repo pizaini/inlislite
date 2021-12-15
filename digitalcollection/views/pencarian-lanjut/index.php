@@ -1,1 +1,0 @@
-<?php $this->title = 'Online Public Access Catalog'; ?>

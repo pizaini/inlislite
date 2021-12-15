@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CLIENT CAROUSEL STYLES */
+.clients-carousel {
+    margin-top: 0; /*SMALL TOP MARGIN FOR SPACE */
+    padding: 0 10px;
+}
+
+    .clients-carousel .thumbnail {
+        border: none;
+    }
+
+    .clients-carousel .carousel-control.left {
+        height: 30px;
+        width: 25px;
+        margin-top: 0;
+        background: none;
+        left: -15px;
+    }
+
+    .clients-carousel .carousel-control.right {
+        height: 30px;
+        width: 25px;
+        margin-top: 0;
+        background: none;
+        right: -15px;
+    }
+
+    .clients-carousel img {
+        width: auto;
+        height: auto; 
+    }

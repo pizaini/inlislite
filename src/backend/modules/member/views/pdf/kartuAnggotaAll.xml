@@ -1,0 +1,52 @@
+<pdf>
+    <dynamic-page margin="0" width="1004px" height="618px" font-type="DejaVuSans">
+    	<?php 
+		$id = $data["id"];
+    	foreach ($id as $key => $value): ?>
+        <?php
+        	$margin_name = 'margin-top="400px"';
+        	$font_size = 'font-size="36px"';
+			$model = \common\models\Members::findOne($value);
+	        $separator = DIRECTORY_SEPARATOR;
+	        $backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}bg_cardmember".Yii::$app->config->get('KartuAnggota').".png";
+	        $image = Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}$model->PhotoUrl";
+			
+	        if (!realpath($image) || $model->PhotoUrl == NULL) 
+	        {
+	            $image=Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}nophoto.jpg";
+	        }
+
+	        if(strlen($model->Fullname) > 25){
+	        	$font_size = 'font-size="25px"';
+	        	$margin_name = 'margin-top="350px"';
+	        }
+
+
+        ?>       
+        <div height="618px" width="1020px" background.color="#ffe061" background.image="<?php echo $backImage; ?>">
+			<!-- Kiri -->
+			<div float="left"  width="600px"  height="579px" >
+				<!-- Nama -->
+                                        <div  <?=$margin_name?> text-align="center" float="center" font-style="bold" <?= $font_size ?>>
+                                             <?php echo strtoupper($model->Fullname); ?>
+                                            <div margin-top="10px"><barcode type="code39"  factor="3.50" font-size="10px" code="<?php echo strtoupper($model->MemberNo); ?>"  background-color="#ffffff" border.size="8" border.color="white"/></div>
+                                        </div>
+                                        
+				
+			</div>
+			<!-- Kanan -->
+			<div float="right" width="300px" height= "579px" margin-right="30px">
+				<!-- UMUM -->
+				 <div  margin-top="15px" text-align="center" font-style="bold" width="540px" padding="15px 0" background.color="black" color="white" font-size="36px">
+				 	<?php echo $model->jenisAnggota->jenisanggota; ?></div>
+				 <div margin-top="15px" text-align="center" font-size="36px"><?php echo $model->MemberNo; ?></div>
+                                 <div margin-top="30px" text-align="center" width="570px"  font-size="30px" >Berlaku Hingga <?php echo date("d-m-Y", strtotime($model->EndDate)); ?>
+                                    <img src="<?php echo $image; ?>" width="280px" height="300px" border.size="8" border.color="white"/>
+                                 </div>
+				
+			</div>
+			<break />
+        </div>
+        <?php endforeach; ?> 
+     </dynamic-page>
+</pdf>

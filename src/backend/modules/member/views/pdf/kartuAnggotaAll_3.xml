@@ -1,0 +1,71 @@
+<pdf>
+    <dynamic-page margin="0" width="1004px" height="618px" font-type="DejaVuSans">
+    	<?php 
+		$id = $data["id"];
+    	foreach ($id as $key => $value): ?>
+        <?php
+			$model = \common\models\Members::findOne($value);
+	        $separator = DIRECTORY_SEPARATOR;
+
+	        $margin_name = 'margin-top="290px"';
+	        
+	        $backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}bg_cardmember".Yii::$app->config->get('KartuAnggota').".png";
+
+	        //$backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}template_membership_card_".Yii::$app->config->get('KartuAnggota').".png";
+	       
+	        $image = Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}.jpg";
+
+	        if (!realpath($image) || $model->PhotoUrl == NULL) 
+	        {
+	            $image=Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}nophoto.jpg";
+	        }
+
+	        if(strlen($model->Fullname) > 25){
+	        	$font_size = 'font-size="25px"';
+	        	$margin_name = 'margin-top="258px"';
+	        }
+
+        ?>       
+        <div height="618px" width="1020px" background.color="#ffe061" background.image="<?php echo $backImage; ?>">
+			<!-- Kiri -->
+			<div float="left"  width="1000px"  height="579px" >
+
+				<div float="left" <?=$margin_name?> margin-left="32px" width="264px" height="221px" font-size="32px" text-align="center" >
+					Kartu Anggota<br/>
+					<?php echo $model->jenisAnggota->jenisanggota; ?>	
+				</div>
+			
+
+				<div float="left" <?=$margin_name?> margin-left="50px" font-size="36px" width="600px" >
+
+					<div width="610px"  margin-left="20px" float="left" font-style="bold" <?=$font_size?>>
+						<?php echo strtoupper($model->Fullname); ?>
+					</div>
+					<div width="610px"  margin-left="20px" float="left" <?=$font_size?>>
+						<?php echo $model->MemberNo; ?>
+					</div>
+				</div>
+
+				<div float="center" margin-top="100px" margin-right="20px" width="400px" font-size="12px" >
+						<barcode  font-style="bold" type="code39"  factor="3.50" font-size="10px" code="<?php echo strtoupper($model->MemberNo); ?>"  background-color="#ffffff"/>
+				</div>
+
+				<div float="left" margin-top="130px" margin-left="32px" width="264px" text-align="center" font-size="26px">
+					Berlaku Hingga<br/> <?php echo date("d-m-Y", strtotime($model->EndDate)); ?>
+				</div>
+
+
+
+
+			</div>
+			<!-- Kanan -->
+		
+			<break />
+        </div>
+        <?php endforeach; ?> 
+     </dynamic-page>
+</pdf>
+
+
+
+

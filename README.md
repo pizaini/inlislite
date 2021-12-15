@@ -13,8 +13,19 @@ menghilangkan lisensi Inlislite v3 dari Perpusnas Indonesia. Kami bangga menggun
 docker run -d -p 8083:80 -e DB_HOST="host.docker.internal" -e DB_PORT="3306" -e DB_NAME="inlislite" -e DB_USERNAME="root" -e DB_PASSWORD="xxxxxx"  pizaini/inlislite:latest
 ```
 
-# Why vendor dir?
-Kami sudah mencoba menggunakan composer install menggunakan file composer.json bawaan dari Inlislite. Tetapi ada banyak library yang tidak kompatible hingga library yang tidak tersedia lagi. Sehingga terlalu banyak tracing source code yang harus dilakukan. Make it simple !.
+## Docker compose
+```yaml
+inlislite:
+    image: pizaini/inlislite
+    container_name: inlislite
+    ports:
+      - "8080:80"
+```
+
+# Ada apa dengan vendor dir?
+Kami sudah mencoba menggunakan composer install menggunakan file composer.json bawaan dari Inlislite. Tetapi ada 
+banyak library yang tidak kompatible hingga library yang tidak tersedia lagi. Sehingga terlalu banyak tracing source 
+code yang harus dilakukan. Cukup copy directory vendor dari source code aslinya. Make it simple !.
 
 # TENTANG INLISLITE VERSI 3 (Original readme)
 ==================================

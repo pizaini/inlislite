@@ -1,0 +1,60 @@
+<!-- Created by HENRY <alvin_vna@yahoo.com>-->
+<pdf>
+    <dynamic-page page-size="a4"  font-type="DejaVuSans">
+    	<?php 
+		$id = $data["id"];
+    	foreach ($id as $key => $value): ?>
+        <?php
+			$model = \common\models\Members::findOne($value);
+	        $separator = DIRECTORY_SEPARATOR;
+	        $backImage = Yii::getAlias('@uploaded_files') . "{$separator}settings{$separator}kartu_anggota{$separator}bg_cardmember1.png";
+	        $image = Yii::getAlias('@uploaded_files') . "{$separator}foto_anggota{$separator}$value.jpg";
+
+	        if (!realpath($image)) 
+	        {
+	            $image=Yii::getPathOfAlias('webroot') . "{$separator}foto{$separator}/nophoto.jpg";
+	        }
+
+        ?>       
+
+		<div position="relative">
+			<img src="<?php echo $backImage; ?>" width="350px" height="250px" />
+			<h2 position="absolute" top="200px">
+				<span background.color="#ffe061">
+					Testing 
+				</span>
+			</h2>
+		</div>
+
+        <div height="218px" width="100%" background.color="#ffe061" position="relative">
+			
+			<!-- Kiri -->
+			<div float="left"  width="300px"  height="279px" position="absolute">
+				<!-- Nama -->
+				<div margin-top="100px" text-align="center" font-style="bold" font-size="16px" width="100%">
+
+				 <?php echo $model->Fullname; ?> 
+				</div>
+				<br/>
+				<!-- Barcode -->
+				<div  margin-top="4px" >
+                                    
+                  <barcode type="code39"  factor="1.70"  code="<?php echo $model->MemberNo; ?>" 
+                  	margin-left="10px" background-color="#ffffff"/>
+                </div>
+                <!-- Kanan -->
+				<div float="right" width="300px" height= "79px" margin-right="200px" >
+					<!-- UMUM -->
+					 <div margin-top="30px" text-align="center" font-style="bold" width="140px" background-color="black" color="white" font-size="26px" >
+					 	<?php echo $model->jenisAnggota->jenisanggota; ?></div>
+					 <div margin-top="15px" text-align="center" font-size="36px"><?php echo $model->MemberNo; ?></div>
+					 <div margin-top="30px" text-align="center" width="570px"  font-size="30px">Berlaku Hingga <?php echo date("d-m-Y", strtotime($model->EndDate)); ?></div>
+					 <img src="<?php echo $image; ?>" width="300px" height="300px" />
+				</div>
+			</div>
+			
+			<break />
+        </div>
+        <?php endforeach; ?> 
+     </dynamic-page>
+</pdf>

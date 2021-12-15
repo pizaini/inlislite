@@ -1,0 +1,60 @@
+<?php
+
+namespace common\models;
+
+use Yii;
+use yii\base\Model;
+use yii\data\ActiveDataProvider;
+use common\models\Library;
+
+/**
+ * LibrarySearch represents the model behind the search form about `common\models\Library`.
+ */
+class LibrarySearch extends Library
+{
+    public function rules()
+    {
+        return [
+            [['ID'], 'integer'],
+            [['NAME', 'URL', 'PORT', 'DATABASENAME', 'RECORDSYNTAX', 'FULLNAME', 'CreateBy', 'CreateDate', 'CreateTerminal', 'UpdateBy', 'UpdateTerminal', 'UpdateDate'], 'safe'],
+        ];
+    }
+
+    public function scenarios()
+    {
+        // bypass scenarios() implementation in the parent class
+        return Model::scenarios();
+    }
+
+    public function search($params)
+    {
+        $query = Library::find();
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        if (!($this->load($params) && $this->validate())) {
+            return $dataProvider;
+        }
+
+        $query->andFilterWhere([
+            'ID' => $this->ID,
+            'CreateDate' => $this->CreateDate,
+            'UpdateDate' => $this->UpdateDate,
+        ]);
+
+        $query->andFilterWhere(['like', 'NAME', $this->NAME])
+            ->andFilterWhere(['like', 'URL', $this->URL])
+            ->andFilterWhere(['like', 'PORT', $this->PORT])
+            ->andFilterWhere(['like', 'DATABASENAME', $this->DATABASENAME])
+            ->andFilterWhere(['like', 'RECORDSYNTAX', $this->RECORDSYNTAX])
+            ->andFilterWhere(['like', 'FULLNAME', $this->FULLNAME])
+            ->andFilterWhere(['like', 'CreateBy', $this->CreateBy])
+            ->andFilterWhere(['like', 'CreateTerminal', $this->CreateTerminal])
+            ->andFilterWhere(['like', 'UpdateBy', $this->UpdateBy])
+            ->andFilterWhere(['like', 'UpdateTerminal', $this->UpdateTerminal]);
+
+        return $dataProvider;
+    }
+}
