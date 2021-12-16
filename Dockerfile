@@ -19,7 +19,7 @@ RUN mkdir /app/web/vendor
 ADD --chown=www-data:www-data docker/vendor/vendor1.tar.gz /app/web/vendor/
 ADD --chown=www-data:www-data docker/vendor/vendor2.tar.gz /app/web/vendor/
 
-# INSTALL rar extension
+# INSTALL rar extension to /usr/local/lib/php/extensions/no-debug-non-zts-20131226
 WORKDIR /
 RUN curl http://pecl.php.net/get/rar-3.0.2.tgz -o rar-3.0.2.tgz \
     && gunzip rar-3.0.2.tgz \
@@ -30,7 +30,7 @@ WORKDIR rar-3.0.2
 RUN phpize \
     && ./configure \
     && make && make install \
-    && sed -i 's/;   extension=msql.so/extension=\/usr\/lib\/php5\/20121212\/rar.so/g' /usr/local/etc/php/php.ini \
+    && sed -i 's/;   extension=msql.so/extension=\/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20131226\/rar.so/g' /usr/local/etc/php/php.ini \
     && rm -rf /rar-3.0.2
 
 COPY ./docker/run.sh /run.sh
